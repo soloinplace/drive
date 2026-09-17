@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Drive Security Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Drive Security Monitor</h1>
+        <p>User behavior monitoring</p>
+    </header>
+
+    <main>
+
+        <section class="user-panel">
+            <h2>User activity</h2>
+
+            <div class="stats">
+
+                <div>
+                    <span>Users</span>
+                    <strong id="user">-</strong>
+                </div>
+
+                <div>
+                    <span>Connections</span>
+                    <strong id="connections">-</strong>
+                </div>
+
+                <div>
+                    <span>Downloads</span>
+                    <strong id="downloads">-</strong>
+                </div>
+
+                <div>
+                    <span>Permissions denieds</span>
+                    <strong id="denials">-</strong>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="tests">
+
+            <h2>Security log</h2>
+
+            <input
+                type="file"
+                id="json-file"
+                accept=".json"
+            >
+
+            <p id="clean-status" class="hidden">
+                ✓ No threat detected
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <div id="alert-popup" class="hidden">
+
+        <div class="alert-box">
+
+            <div class="alert-icon">⚠</div>
+
+            <h2>SECURITY ALERT</h2>
+
+            <p id="alert-rule"></p>
+
+            <p id="alert-message"></p>
+
+            <button id="close-alert">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "user": "paige.turner@library.book",
+
+    "downloads": 65,
+    "download_window": 60,
+    "bytes": 500000000,
+
+    "denials": 32,
+    "denial_window": 300,
+    "distinct_denied_items": 8,
+
+    "permission_changes": 35,
+    "permission_window": 300,
+    "distinct_permission_items": 8,
+
+    "self_grant_admin": false
+}

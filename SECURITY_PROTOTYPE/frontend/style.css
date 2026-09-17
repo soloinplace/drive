@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 80px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#alert-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-box {
+    background: white;
+    padding: 50px;
+    width: 500px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.alert-icon {
+    font-size: 70px;
+    color: rgb(154, 4, 4);
+    fill: rgb(154, 4, 4);
+}
+
+.alert-box h2 {
+    font-size: 32px;
+    color: rgb(154, 4, 4);
+}
+
+.alert-box p {
+    font-size: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-box {
+    background: white;
+    padding: 50px;
+    width: 500px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 70px;
+}
+
+.success-box h2 {
+    font-size: 32px;
+}
+
+.success-box p {
+    font-size: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#clean-status {
+    margin-top: 15px;
+    color: #3ad35e;
+    font-weight: bold;
+    font-size: 18px;
+}

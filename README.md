@@ -1,3 +1,25 @@
+# DINUM hackathon — my contribution to La Suite Drive
+
+This is my fork of [La Suite Drive](https://github.com/suitenumerique/drive), the open-source file-sharing application from La Suite numérique. My hackathon contribution focuses on **security audit logging and suspicious-activity detection**.
+
+**[Explore the implementation](https://github.com/soloinplace/drive/tree/feature/engine)** · **[Upstream proposal: PR #849](https://github.com/suitenumerique/drive/pull/849)** · **[Technical documentation](https://github.com/soloinplace/drive/blob/feature/engine/docs/security-monitoring.md)**
+
+## My contribution
+
+* Capture structured audit events for downloads, denied access, permission changes and shared links.
+* Detect mass downloads, repeated permission probing and suspicious privilege changes through configurable rules.
+* Process events in bounded Celery batches, with persistent checkpoints and recovery handling.
+* Produce alerts with severity, explanations and supporting event references.
+* Support optional PostHog delivery and email digests, alongside a Docker Compose monitoring overlay, operator documentation, demonstrations and targeted tests.
+
+The implementation is on the `feature/engine` branch and is proposed upstream through the pull request linked above. It produces alerts for investigation; it does not automatically block accounts or revoke permissions.
+
+---
+
+## Original project documentation
+
+The upstream project's presentation and setup instructions are preserved below.
+
 <p align="center">
   <a href="https://github.com/suitenumerique/drive">
     <img alt="Drive banner" src="/docs/assets/banner-drive.png" width="100%" />
